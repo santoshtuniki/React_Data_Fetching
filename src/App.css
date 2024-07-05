@@ -1,0 +1,161 @@
+.App {
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e2e3;
+}
+
+/* JobAlert */
+.job_field {
+    width: 95%;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #c5bfbfd6;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 8px auto;
+}
+
+.title span {
+    font-weight: normal;
+}
+
+.agency {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.job_field li {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.job_field h2 {
+    margin: 0.5em auto;
+}
+
+.apply {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 0.5px;
+    font-size: 16px;
+    margin-left: 40%;
+}
+
+.back {
+    width: 100px;
+    padding: 10px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 0.5px;
+    font-size: 14px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+/* JobIntro */
+.intro {
+    display: flex;
+}
+
+.intro p {
+    width: 30%;
+    margin: 10px auto;
+}
+
+.intro span {
+    margin-left: 10px;
+}
+
+/* SkillIntro */
+.skill_intro {
+    padding-left: 18px;
+    display: flex;
+}
+
+.skill_intro p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.requirement {
+    flex: 1
+}
+
+.requirement span {
+    color: blue;
+    text-decoration: underline;
+}
+
+.requirement span:hover {
+    color: hotpink;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* Loading */
+.loading {
+    height: 100vh;
+    justify-content: center;
+    margin-top: 25%;
+    margin-left: 45%;
+    color: green;
+}
+
+/* Error */
+.error {
+    height: 100vh;
+    justify-content: center;
+    margin-top: 25%;
+    margin-left: 35%;
+    color: red;
+}
+
+@media screen and (max-width: 920px) {
+    .intro{
+        display: block;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .skill_intro{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .agency{
+        position: relative;
+        top: 0;
+        left: 0;
+    }    
+}
+
+@media screen and (max-width: 730px) {
+    .job_field .back {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 680px) {
+    .job_field {
+        width: 90%;
+    }
+}
